@@ -8,4 +8,26 @@ end
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
-nvimtree.setup()
+-- color = "#98971a"
+-- color = "#b8bb26"
+-- vim.cmd([[ highlight NvimTreeIndentMarker guifg=#B8BB26 ]])
+
+nvimtree.setup({
+    renderer = {
+        icons = {
+            glyphs = {
+                folder = {
+                    arrow_closed = "󱦰",
+                    arrow_open = "󱞩",
+                },
+            },
+        },
+    },
+    actions = {
+        open_file = {
+            window_picker = {
+                enable = false,
+            },
+        },
+    },
+})
