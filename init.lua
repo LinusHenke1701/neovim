@@ -9,3 +9,4 @@ require("linus.lazy")
 --  Plugin configs
 require("linus.plugins.nvim-tree")
 require("linus.plugins.toggleterm")
+require("linus.plugins.lualine")

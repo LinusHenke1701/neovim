@@ -27,5 +27,6 @@ require("lazy").setup({
     {"tpope/vim-surround"},
     {"vim-scripts/ReplaceWithRegister"},
     {"nvim-tree/nvim-tree.lua"},
+    {"nvim-tree/lualine.nvim"},
 })
 
