@@ -49,7 +49,7 @@ lazy.setup({
     {"nvim-tree/nvim-tree.lua"},
 
     --  LuaLine
-    {"nvim-tree/lualine.nvim"},
+    {"nvim-lualine/lualine.nvim"},
 
     --  Dressing (For extra functionality of the input and select function
     {
@@ -60,7 +60,7 @@ lazy.setup({
     --  Telescope
     {
         "nvim-telescope/telescope.nvim",
-        branch = "0.1.4",
+        branch = "0.1.x",
         dependencies = {
             "nvim-lua/plenary.nvim",
             {"nvim-telescope/telescope-fzf-native.nvim", build = "make" },
