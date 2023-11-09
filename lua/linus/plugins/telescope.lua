@@ -1,15 +1,18 @@
+--  Require telescope
 local setup, telescope = pcall(require, "telescope")
 if not setup then
     print("Could not load telescope")
     return
 end
 
+--  Require telescope.builtin
 local setup, builtin = pcall(require, "telescope.builtin")
 if not setup then
     print("Could not load telescope.builtin,")
     return
 end
 
+--  Require telescope.actions
 local setup, actions = pcall(require, "telescope.actions")
 if not setup then
     print("Could not load telescope.actions")
