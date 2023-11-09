@@ -11,7 +11,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
+setup, lazy = pcall(require, "lazy")
+
+if not setup then
+    print("Did not load lazy.")
+    return
+end
+
+lazy.setup({
     {"nvim-lua/plenary.nvim"},
     {
         "morhetz/gruvbox",
