@@ -98,6 +98,15 @@ lazy.setup({
     },
     {"nvimdev/lspsaga.nvim"},
     {"onsails/lspkind.nvim"},
+
+    --  treesitter
+    {
+        "nvim-treesitter/nvim-treesitter",
+    },
+
+    --  auto closing
+    {"windwp/nvim-autopairs"},
+    {"windwp/nvim-ts-autotag"},
 })
 
 

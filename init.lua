@@ -12,6 +12,8 @@ require("linus.plugins.toggleterm")
 require("linus.plugins.lualine")
 require("linus.plugins.telescope")
 require("linus.plugins.cmp")
+require("linus.plugins.treesitter")
+require("linus.plugins.autoclose")
 
 --  LSP
 require("linus.plugins.lsp.mason")
