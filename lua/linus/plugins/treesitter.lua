@@ -14,6 +14,18 @@ treesitter.setup({
     autotag = { enable = true },
     ensure_installed = {
         "dockerfile",
+        "cpp",
+        "css",
+        "bash",
+        "c",
+        "cmake",
+        "csv",
+        "html",
+        "java",
+        "javascript",
+        "lua",
+        "python",
+        "rust"
     },
     auto_install = true,
 })
