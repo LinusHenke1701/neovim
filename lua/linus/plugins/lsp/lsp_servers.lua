@@ -1,6 +1,8 @@
 return {
     clangd = {},
 
+    svelte = {},
+
     cmake = {},
 
     dockerls = {},

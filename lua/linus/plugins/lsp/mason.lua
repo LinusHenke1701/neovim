@@ -15,7 +15,10 @@ end
 mason.setup({})
 
 
-local servers = require("linus.plugins.lsp.lsp_servers")
+local servers = {}
+for key, _ in pairs(require("linus.plugins.lsp.lsp_servers")) do
+    table.insert(servers, key)
+end
 
 mason_lsp.setup {
     ensure_installed = servers,
