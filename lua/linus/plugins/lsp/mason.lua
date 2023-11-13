@@ -12,12 +12,13 @@ if not setup then
 end
 
 
-mason.setup()
+mason.setup({})
 
 
 local servers = require("linus.plugins.lsp.lsp_servers")
 
 mason_lsp.setup {
-    ensure_installed = servers
+    ensure_installed = servers,
+    automatics_installation = true,
 }
 

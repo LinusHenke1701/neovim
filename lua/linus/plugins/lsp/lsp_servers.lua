@@ -3,5 +3,6 @@ return {
     "cmake",
     "dockerls",
     "lua_ls",
-    "pyright"
+    "pyright",
+    "rust_analyzer",
 }

@@ -69,21 +69,35 @@ lazy.setup({
     },
 
     --  Autocompletion
-    {"hrsh7th/nvim-cmp"},
-    {"hrsh7th/cmp-buffer"},
-    {"hrsh7th/cmp-path"},
+    {
+        "hrsh7th/nvim-cmp",
+        event = "InsertEnter",
+        dependencies = {
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-path",
+        },
+    },
     {"L3MON4D3/LuaSnip"},
     {"saadparwaiz1/cmp_luasnip"},
     {"rafamadriz/friendly-snippets"},
 
     --  Managing LSP
-    {"williamboman/mason.nvim"},
-    {"williamboman/mason-lspconfig.nvim"},
+    {
+        "williamboman/mason.nvim",
+        dependencies = {"williamboman/mason-lspconfig.nvim"},
+    },
 
     --  Configure LSP
-    {"neovim/nvim-lspconfig"},
-    {"hrsh7th/cmp-nvim-lsp"},
+    {
+        "neovim/nvim-lspconfig",
+        event = {"BufReadPre", "BufNewFile"},
+        dependencies = {
+            "hrsh7th/cmp-nvim-lsp",
+            {"antosha417/nvim-lsp-file-operations", config = true},
+        },
+    },
     {"nvimdev/lspsaga.nvim"},
     {"onsails/lspkind.nvim"},
 })
+
 
