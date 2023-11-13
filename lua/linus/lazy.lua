@@ -107,6 +107,10 @@ lazy.setup({
     --  auto closing
     {"windwp/nvim-autopairs"},
     {"windwp/nvim-ts-autotag"},
+
+
+    --  git integration
+    {"lewis6991/gitsigns.nvim"}
 })
 
 

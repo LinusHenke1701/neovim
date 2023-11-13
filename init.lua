@@ -14,6 +14,7 @@ require("linus.plugins.telescope")
 require("linus.plugins.cmp")
 require("linus.plugins.treesitter")
 require("linus.plugins.autoclose")
+require("linus.plugins.gitsigns")
 
 --  LSP
 require("linus.plugins.lsp.mason")
