@@ -26,3 +26,4 @@ keymap.set("n", "<leader>co", terminal_setup .. "<CR>")     -- open terminal
 -- Nvim-Tree
 keymap.set("n", "<C-f>", ":NvimTreeToggle<CR>")
 
+

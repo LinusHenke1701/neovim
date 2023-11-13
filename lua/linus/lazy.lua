@@ -67,5 +67,21 @@ lazy.setup({
             "nvim-tree/nvim-web-devicons",
         },
     },
+
+    --  Autocompletion
+    {"hrsh7th/nvim-cmp"},
+    {"hrsh7th/cmp-buffer"},
+    {"hrsh7th/cmp-path"},
+
+    --  Managing LSP
+    {"williamboman/mason.nvim"},
+    {"williamboman/mason-lspconfig.nvim"},
+
+    --  Configure LSP
+    {"neovim/nvim-lspconfig"},
+    {"hrsh7th/cmp-nvim-lsp"},
+    -- {{ "nvimdev/lspsaga.nvim"}, branch = "main"},
+    {"onsails/lspkind.nvim"},
+    
 })
 

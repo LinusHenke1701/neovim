@@ -11,3 +11,8 @@ require("linus.plugins.nvim-tree")
 require("linus.plugins.toggleterm")
 require("linus.plugins.lualine")
 require("linus.plugins.telescope")
+require("linus.plugins.cmp")
+
+--  LSP
+require("linus.plugins.lsp.mason")
+require("linus.plugins.lsp.lspconfig")
