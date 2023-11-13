@@ -47,41 +47,14 @@ end
 --  Configuring every server in the lsp_servers file
 local servers = require("linus.plugins.lsp.lsp_servers")
 
-local additional_setup = {
-    rust_analyzer = {
-        settings = {
-            imports = {
-                granularity = {
-                    group = "module",
-                },
-                prefix = "self",
-            },
-            cargo = {
-                buildScripts = {
-                    enable = true,
-                },
-            },
-            procMacro = {
-                enable = true
-            },
-        }
-    },
-    pyright = {
-        settings = {
-            python = {
-                pythonPath = "/usr/local/bin/python"
-            }
-        }
-    }
-}
 
-for _, server in pairs(servers) do
+for server, _ in pairs(servers) do
     local setup_options = {
         capabilities = capabilities,
         on_attach = on_attach,
     }
 
-    add_settings = additional_setup[server]
+    local add_settings = servers[server]
     if add_settings ~= nil then
         for k, v in pairs(add_settings) do
             setup_options[k] = v
