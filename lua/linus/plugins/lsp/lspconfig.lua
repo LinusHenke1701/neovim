@@ -65,6 +65,13 @@ local additional_setup = {
                 enable = true
             },
         }
+    },
+    pyright = {
+        settings = {
+            python = {
+                pythonPath = "/usr/local/bin/python"
+            }
+        }
     }
 }
 
