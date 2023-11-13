@@ -17,17 +17,6 @@ mason.setup()
 
 local servers = require("linus.plugins.lsp.lsp_servers")
 
-
--- mason_lsp.setup {
---     ensure_installed = {
---         "clangd",
---         "cmake",
---         "dockerls",
---         "lua_ls",
---         "pyright"
---     },
--- }
---
 mason_lsp.setup {
     ensure_installed = servers
 }

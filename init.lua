@@ -16,3 +16,4 @@ require("linus.plugins.cmp")
 --  LSP
 require("linus.plugins.lsp.mason")
 require("linus.plugins.lsp.lspconfig")
+require("linus.plugins.lsp.lsp_saga")

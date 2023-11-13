@@ -21,26 +21,10 @@ local capabilities = cmp_nvim_lsp.default_capabilities()
 
 local servers = require("linus.plugins.lsp.lsp_servers")
 
-for i, server in pairs(servers) do
+for _, server in pairs(servers) do
     lspconfig[server].setup({
         capabilities = capabilities,
         on_attach = on_attach
     })
 end
-
-
--- lspconfig["clangd"].setup({
---     capabilities = capabilities,
---     on_attach = on_attach
--- })
--- 
--- lspconfig["cmake"].setup({
---     capabilities = capabilities,
---     on_attach = on_attach
--- })
--- 
--- lspconfig["pyright"].setup({
---     capabilities = capabilities,
---     on_attach = on_attach
--- })
 

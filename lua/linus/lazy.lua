@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-setup, lazy = pcall(require, "lazy")
+local setup, lazy = pcall(require, "lazy")
 
 if not setup then
     print("Did not load lazy.")
@@ -72,6 +72,9 @@ lazy.setup({
     {"hrsh7th/nvim-cmp"},
     {"hrsh7th/cmp-buffer"},
     {"hrsh7th/cmp-path"},
+    {"L3MON4D3/LuaSnip"},
+    {"saadparwaiz1/cmp_luasnip"},
+    {"rafamadriz/friendly-snippets"},
 
     --  Managing LSP
     {"williamboman/mason.nvim"},
@@ -80,8 +83,7 @@ lazy.setup({
     --  Configure LSP
     {"neovim/nvim-lspconfig"},
     {"hrsh7th/cmp-nvim-lsp"},
-    -- {{ "nvimdev/lspsaga.nvim"}, branch = "main"},
+    {"nvimdev/lspsaga.nvim"},
     {"onsails/lspkind.nvim"},
-    
 })
 
