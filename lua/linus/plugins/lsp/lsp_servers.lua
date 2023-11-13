@@ -9,7 +9,15 @@ return {
 
     pyright = {
         settings = {
+            pyright = {
+                { autoimportCompletion = true, },
+            },
             python = {
+                analysis = {
+                    autoSearchPaths = true,
+                    diagnosticMode = "openFilesOnly",
+                    typeCheckingMode = "strict",
+                },
                 pythonPath = "/usr/local/bin/python"
             }
         }
