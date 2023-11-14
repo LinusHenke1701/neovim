@@ -15,6 +15,7 @@ require("linus.plugins.cmp")
 require("linus.plugins.treesitter")
 require("linus.plugins.autoclose")
 require("linus.plugins.gitsigns")
+require("linus.plugins.py_lsp")
 
 --  LSP
 require("linus.plugins.lsp.mason")

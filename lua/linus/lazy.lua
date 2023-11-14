@@ -110,7 +110,10 @@ lazy.setup({
 
 
     --  git integration
-    {"lewis6991/gitsigns.nvim"}
+    {"lewis6991/gitsigns.nvim"},
+
+    --  Pyright venv setup
+    {"HallerPatrick/py_lsp.nvim"},
 })
 
 
