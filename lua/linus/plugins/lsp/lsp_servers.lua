@@ -74,4 +74,11 @@ return {
             },
         }
     },
+
+    tsserver = {},
+
+    eslint = {},
+
+    bashls = {},
+
 }
