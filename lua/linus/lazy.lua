@@ -34,7 +34,7 @@ lazy.setup({
     {'akinsho/toggleterm.nvim', version = "*", config = true},
 
     --  Tmux-Navigator (Navigate through splits with ctrl)
-    {'christoomey/vim-tmux-navigator'},
+    {'alexghergh/nvim-tmux-navigation'},
 
     --  Vim Maximizer (Maximize splits.)
     {'szw/vim-maximizer'},

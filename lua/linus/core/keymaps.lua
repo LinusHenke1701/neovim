@@ -20,7 +20,7 @@ keymap.set("n", "<leader>tn", ":tabn<CR>")                  -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>")                  -- go to pevious tab
 
 -- Terminal split
-terminal_setup = ":ToggleTerm size=18 direction=horizontal name=terminal"
+local terminal_setup = ":ToggleTerm size=18 direction=horizontal name=terminal"
 keymap.set("n", "<leader>co", terminal_setup .. "<CR>")     -- open terminal
 
 -- Nvim-Tree

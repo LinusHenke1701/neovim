@@ -5,7 +5,7 @@ opt.relativenumber = true
 opt.number = true
 
 -- tabs
-width = 4
+local width = 4
 
 opt.tabstop = width
 opt.shiftwidth = width

@@ -56,6 +56,8 @@ return {
         }
     },
 
+    quick_lint_js = {},
+
     rust_analyzer = {
         settings = {
             imports = {
