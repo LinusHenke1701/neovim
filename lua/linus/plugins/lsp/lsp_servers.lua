@@ -83,4 +83,6 @@ return {
 
     bashls = {},
 
+    tailwindcss = {},
+
 }
