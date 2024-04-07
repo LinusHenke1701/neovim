@@ -114,6 +114,9 @@ lazy.setup({
 
     --  Pyright venv setup
     {"HallerPatrick/py_lsp.nvim"},
+
+    --  Copilot integration
+    {"github/copilot.vim"},
 })
 
 
