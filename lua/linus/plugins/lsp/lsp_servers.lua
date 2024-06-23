@@ -85,4 +85,6 @@ return {
 
     tailwindcss = {},
 
+    swift_mesonls = {},
+
 }
