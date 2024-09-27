@@ -49,7 +49,7 @@ return {
                 analysis = {
                     autoSearchPaths = true,
                     diagnosticMode = "openFilesOnly",
-                    typeCheckingMode = "off",
+                    typeCheckingMode = "on",
                 },
                 pythonPath = "/usr/local/bin/python"
             }
