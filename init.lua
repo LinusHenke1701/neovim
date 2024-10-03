@@ -17,6 +17,7 @@ require("linus.plugins.autoclose")
 require("linus.plugins.gitsigns")
 require("linus.plugins.py_lsp")
 require("linus.plugins.tmux_navigator")
+require("linus.plugins.copilot")
 
 --  LSP
 require("linus.plugins.lsp.mason")
