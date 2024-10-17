@@ -3,6 +3,20 @@ if not status then
     return
 end
 
+
+local function find_python_path()
+    local read = io.popen("which python")
+    if read then
+        local path = read:read("*a")
+        read:close()
+        return path:gsub("%\n", "")
+    else
+        return "/usr/local/bin/python"
+    end
+end
+
+local python_path = find_python_path()
+
 return {
     clangd = {
         cmd = {
@@ -51,7 +65,8 @@ return {
                     diagnosticMode = "openFilesOnly",
                     typeCheckingMode = "on",
                 },
-                pythonPath = "/usr/local/bin/python"
+                pythonPath = python_path,
+--                pythonPath = find_python_path()
             }
         }
     },
