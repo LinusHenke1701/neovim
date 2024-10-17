@@ -92,6 +92,8 @@ return {
         }
     },
 
+    hls = {},
+
     tsserver = {},
 
     eslint = {},
