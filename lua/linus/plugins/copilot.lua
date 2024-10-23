@@ -1,36 +1,36 @@
 -- Copilot configuration file
+local disable_copilot = function()
+    vim.cmd("Copilot disable")
+    print("Copilot disabled")
+end
+
+local enable_copilot = function()
+    vim.cmd("Copilot enable")
+    print("Copilot enabled")
+end
+
 function toggle_copilot()
     if vim.g.copilot_enabled == 1 then
-        vim.cmd("Copilot disable")
-        print("Copilot disabled")
+        disable_copilot()
     else
-        vim.cmd("Copilot enable")
-        print("Copilot enabled")
+        enable_copilot()
     end
 end
 
-local isInList = function(list, value)
-    for _, v in pairs(list) do
-        if v == value then
-            return true
-        end
-    end
-    return false
-end
-
-local enabled = 1
-local unwanted_filetypes = {
-    "tex",
-    "text",
-    "markdown",
-    "html",
-    "css",
-}
-local filetype = vim.bo.filetype
-if isInList(unwanted_filetypes, filetype) then
-    enabled = 0
-end
-
-vim.g.copilot_enabled = enabled
+vim.g.copilot_enabled = 1
 vim.api.nvim_set_keymap("n", "<leader>tc", ":lua toggle_copilot()<CR>",
     { noremap = true, silent = true })
+
+local unwanted_filetypes = {
+    "*.tex",
+    "*.txt",
+    "*.md",
+    "*.html",
+    "*.css",
+}
+for _, filetype in ipairs(unwanted_filetypes) do
+    vim.api.nvim_create_autocmd("BufReadPost", {
+        pattern = filetype,
+        callback = disable_copilot,
+    })
+end
