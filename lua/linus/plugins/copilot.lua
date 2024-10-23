@@ -29,7 +29,7 @@ local unwanted_filetypes = {
     "*.css",
 }
 for _, filetype in ipairs(unwanted_filetypes) do
-    vim.api.nvim_create_autocmd("BufReadPost", {
+    vim.api.nvim_create_autocmd("BufEnter", {
         pattern = filetype,
         callback = disable_copilot,
     })
