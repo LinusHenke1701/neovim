@@ -66,7 +66,6 @@ return {
                     typeCheckingMode = "on",
                 },
                 pythonPath = python_path,
---                pythonPath = find_python_path()
             }
         }
     },
@@ -104,4 +103,5 @@ return {
 
     swift_mesonls = {},
 
+    texlab = {},
 }

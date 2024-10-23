@@ -27,7 +27,8 @@ treesitter.setup({
         "javascript",
         "lua",
         "python",
-        "rust"
+        "rust",
+        "latex"
     },
     auto_install = true,
 })
