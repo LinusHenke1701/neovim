@@ -9,7 +9,7 @@ local enable_copilot = function()
     print("Copilot enabled")
 end
 
-function toggle_copilot()
+function ToggleCopilot()
     if vim.g.copilot_enabled == 1 then
         disable_copilot()
     else
@@ -18,7 +18,7 @@ function toggle_copilot()
 end
 
 vim.g.copilot_enabled = 1
-vim.api.nvim_set_keymap("n", "<leader>tc", ":lua toggle_copilot()<CR>",
+vim.api.nvim_set_keymap("n", "<leader>tc", ":lua ToggleCopilot()<CR>",
     { noremap = true, silent = true })
 
 local unwanted_filetypes = {
