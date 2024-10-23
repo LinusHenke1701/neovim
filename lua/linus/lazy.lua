@@ -117,6 +117,9 @@ lazy.setup({
 
     --  Copilot integration
     {"github/copilot.vim"},
+
+    --  LaTeX integration
+    {"lervag/vimtex"},
 })
 
 
