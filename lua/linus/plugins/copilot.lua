@@ -17,7 +17,6 @@ function ToggleCopilot()
     end
 end
 
-vim.g.copilot_enabled = 1
 vim.api.nvim_set_keymap("n", "<leader>tc", ":lua ToggleCopilot()<CR>",
     { noremap = true, silent = true })
 
@@ -32,5 +31,23 @@ for _, filetype in ipairs(unwanted_filetypes) do
     vim.api.nvim_create_autocmd("BufEnter", {
         pattern = filetype,
         callback = disable_copilot,
+    })
+end
+
+local wanted_filetypes = {
+    "*.cpp",
+    "*.lua",
+    "*.py",
+    "*.hs",
+    "*.rs",
+    "*.c",
+    "*.js",
+    "*.svelte",
+    "*.java"
+}
+for _, filetype in ipairs(wanted_filetypes) do
+    vim.api.nvim_create_autocmd("BufEnter", {
+        pattern = filetype,
+        callback = enable_copilot,
     })
 end
