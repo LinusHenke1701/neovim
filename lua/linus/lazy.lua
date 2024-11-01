@@ -40,7 +40,7 @@ lazy.setup({
         lazy = false,
         priority = 1000,
         opts = {},
-        setup = function ()
+        config = function ()
             vim.cmd[[colorscheme tokyonight-night]]
         end,
     },
