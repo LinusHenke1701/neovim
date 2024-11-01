@@ -8,7 +8,7 @@ opt.number = true
 opt.colorcolumn = "80"
 vim.cmd [[highlight ColorColumn ctermbg=lightgrey guibg=#d3d3d3]]
 
-vim.o.termguicolors = true
+vim.o.termguicolors = false
 
 -- tabs
 local width = 4
