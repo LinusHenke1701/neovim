@@ -25,8 +25,14 @@ lazy.setup({
     {
         "morhetz/gruvbox",
         priority = 1000,
-        config = function()
-            vim.cmd([[colorscheme gruvbox]])
+    },
+    {
+        "craftzdog/solarized-osaka.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+        setup = function ()
+            vim.cmd[[colorscheme solarized-osaka]]
         end,
     },
 
