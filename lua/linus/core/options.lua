@@ -8,8 +8,6 @@ opt.number = true
 opt.colorcolumn = "80"
 vim.cmd [[highlight ColorColumn ctermbg=lightgrey guibg=#d3d3d3]]
 
-vim.o.termguicolors = false
-
 -- tabs
 local width = 4
 
@@ -26,8 +24,7 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- appearance
--- opt.termguicolors = true
-opt.background = "dark"
+opt.termguicolors = true
 opt.signcolumn = "yes"
 
 -- clipboard config
