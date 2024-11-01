@@ -30,10 +30,6 @@ lazy.setup({
         "craftzdog/solarized-osaka.nvim",
         lazy = false,
         priority = 1000,
---        opts = {},
---        setup = function ()
---            vim.cmd[[colorscheme solarized-osaka]]
---        end,
     },
     {
         "folke/tokyonight.nvim",

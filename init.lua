@@ -1,6 +1,5 @@
 --  Core configs
 require("linus.core.options")
-require("linus.core.colorscheme")
 require("linus.core.keymaps")
 
 --  Lazy config
@@ -23,3 +22,6 @@ require("linus.plugins.copilot")
 require("linus.plugins.lsp.mason")
 require("linus.plugins.lsp.lspconfig")
 require("linus.plugins.lsp.lsp_saga")
+
+--  Colorscheme
+require("linus.core.colorscheme")
