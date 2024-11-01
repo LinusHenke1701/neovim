@@ -1,4 +1,4 @@
-local colorscheme = "solarized_osaka"
+local colorscheme = "tokyonight"
 local functions = {
     solarized_osaka = function()
         vim.cmd[[colorscheme solarized-osaka]]
