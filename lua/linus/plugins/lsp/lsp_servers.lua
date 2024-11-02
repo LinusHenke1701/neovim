@@ -42,8 +42,6 @@ return {
         },
     },
 
-    svelte = {},
-
     cmake = {
         root_dir = nvim_lsp.util.root_pattern(
             "CMakeLists.txt"
