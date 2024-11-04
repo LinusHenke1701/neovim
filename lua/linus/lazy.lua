@@ -131,6 +131,10 @@ lazy.setup({
 
     --  LaTeX integration
     {"lervag/vimtex"},
+
+    --  Java integration
+    {"mfussenegger/nvim-jdtls"},
+
 })
 
 
