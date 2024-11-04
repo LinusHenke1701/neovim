@@ -1,4 +1,4 @@
-setup, lualine = pcall(require, "lualine")
+local setup, lualine = pcall(require, "lualine")
 if not setup then
     print("Could not load lualine")
     return
