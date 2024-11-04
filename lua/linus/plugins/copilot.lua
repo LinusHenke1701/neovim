@@ -45,9 +45,11 @@ local wanted_filetypes = {
     "*.svelte",
     "*.java"
 }
+
+local callback = disable_copilot
 for _, filetype in ipairs(wanted_filetypes) do
     vim.api.nvim_create_autocmd("BufEnter", {
         pattern = filetype,
-        callback = enable_copilot,
+        callback = callback,
     })
 end
