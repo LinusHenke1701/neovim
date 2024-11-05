@@ -22,7 +22,7 @@ require("linus.plugins.copilot")
 require("linus.plugins.lsp.mason")
 require("linus.plugins.lsp.lspconfig")
 require("linus.plugins.lsp.lsp_saga")
-require("linus.plugins.lsp.jdtls")
+-- require("linus.plugins.lsp.jdtls")
 
 --  Colorscheme
 require("linus.core.colorscheme")
