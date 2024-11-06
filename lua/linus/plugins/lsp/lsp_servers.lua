@@ -68,6 +68,8 @@ return {
         }
     },
 
+    svelte = {},
+
     quick_lint_js = {},
 
     rust_analyzer = {
