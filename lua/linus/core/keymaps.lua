@@ -25,3 +25,7 @@ keymap.set("n", "<leader>co", terminal_setup .. "<CR>")     -- open terminal
 
 -- Nvim-Tree
 keymap.set("n", "<C-f>", ":NvimTreeToggle<CR>")
+
+-- LSP
+keymap.set("n", "<leader>sd", ":lua vim.diagnostic.open_float()<CR>")   -- show diagnostics
+keymap.set("n", "<leader>si", ":lua vim.lsp.buf.hover()<CR>")           -- show information
