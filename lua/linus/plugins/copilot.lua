@@ -53,3 +53,4 @@ for _, filetype in ipairs(wanted_filetypes) do
         callback = callback,
     })
 end
+disable_copilot()
