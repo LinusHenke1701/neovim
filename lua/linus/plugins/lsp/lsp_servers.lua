@@ -104,4 +104,6 @@ return {
     swift_mesonls = {},
 
     texlab = {},
+
+    sqlls = {},
 }
