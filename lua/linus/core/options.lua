@@ -5,7 +5,7 @@ opt.relativenumber = true
 opt.number = true
 
 -- Color column
-opt.colorcolumn = "80"
+opt.colorcolumn = "100"
 vim.cmd [[highlight ColorColumn ctermbg=lightgrey guibg=#d3d3d3]]
 
 -- tabs
